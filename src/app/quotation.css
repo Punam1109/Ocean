@@ -1,0 +1,228 @@
+/*Basic css here*/
+
+header, body, footer{
+    margin: 0;
+    padding: 2px;
+}
+
+body{
+    background-color: #eef5fd;
+}
+
+header{
+    display: flex;
+    height: 7vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#search-bar{
+    height: 15px;
+    border: none;
+    padding: 5px;
+}
+/* Form Css Below */
+
+form{
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 0 50px 70px 50px;
+    margin: 0 25px 0 25px;
+}
+
+#main-container .form-heading{
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* position: relative; */
+    text-align: left;
+    margin: 0 0 0 25px;
+    padding: 30px;
+}
+
+.side-icon{
+    margin-left: auto;
+}
+
+.side-icon img{
+    padding: 4px;
+}
+
+form{
+    display: flex;
+    grid-area: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 80px);
+    background-color: #eef5fd;
+}
+
+form span{
+    color: rgb(69, 62, 62);
+    font-weight: bolder;
+}
+
+/* Footer Css below */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+    /* color: black; */
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+    margin-left: 0%;
+    height: 55px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 20px;
+}
+
+.back-btn{
+    font-size: 20px;
+    margin: 5px 15px;
+    border-radius: 15px;
+    background-color: white;
+    border-width: 3px;
+    border-color: #244063;
+    color: #244063;
+    width: 100px;
+    height: 35px;
+    font-weight: bolder;
+}
+
+.next-btn{
+    font-size: 20px;
+    margin: 5px 15px;
+    float: right;
+    border: 1.5px solid #4689dc;
+    background-color: #7bafef;
+    border-radius: 15px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    font-weight: bolder;
+}
+
+.next-btn:disabled {
+    pointer-events: none;
+}
+
+.next-btn:hover {
+    color: #fff;
+    background-color: #4689dc;
+    box-shadow: rgba(47, 134, 206, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.next-btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+/* New Css Below */
+
+.container{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.side-navbar{
+    width: 1cm;
+}
+
+.probar{
+    background-color:  rgb(57, 107, 139);
+    border-radius: 4mm;
+    width: 90%;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.progress-bar {
+    background-color: rgb(57, 107, 139);
+    width: 90%;
+    margin-left: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .circle {
+    margin-top: 15px;
+    margin-left: 5%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    color: rgb(141, 141, 141);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .circle.completed {
+    background-color: rgb(92, 183, 213);
+    color: white;
+  }
+
+  .thread.completed {
+    background-color: rgb(92, 183, 213);
+  }
+
+
+  .thread {
+    margin-top: 15px;
+    margin-left: 5%;
+    flex: 1;
+    height: 2px;
+    background-color: white;
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 1px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(232, 232, 234);
+    text-align: center;
+  }
+
+  .benifits{
+    font-size: 20px;
+    margin: 5px 15px;
+    border-radius: 15px;
+    background-color: white;
+    border-width: 3px;
+    border-color: #244063;
+    color: #346199;
+    width: 200px;
+    height: 35px;
+    font-weight: bolder;
+
+  }
+
+.quotation{
+    padding: 30px;
+    align-items: center;
+    width: 84%;
+    height: 140px;
+    border-radius: 4mm;
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.selected {
+    background-color: #ccc;
+  }

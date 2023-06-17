@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="app.component.css">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="service.js" defer></script>
+</head>
+<header>
+    <nav class="head-nav">
+        <div class="head-ctn">
+            <h2>Agent's Portal</h2>
+
+            <div class="search-bar">
+                <img src="Images/search-icon.png" id="search-icon">
+                <input type="search" placeholder="Search...">
+            </div>
+
+            <div class="head-icons">
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+
+
+    <div id="main-container" style="margin-left: 0%;">
+        <div class="margin">
+            <  New Leads
+        </div>
+        <table id="table-container">
+            <tr >
+                <select name="Policies" class="spacing">
+                    <option value=" " disabled selected>All Policies</option>
+                    <option value="Team">Team</option>
+                    <option value="Family">Family</option>
+                    <option value="Life">Life</option>
+                    <option value="Project">Project</option>
+                </select>
+
+                <select name="Recent" class="spacing">
+                    <option value=" " disabled selected>Recent</option>
+                    <option value="Health">days</option>
+                    <option value="Documents">weeks</option>
+                    <option value="Gallery">months</option>
+                </select>
+                <button class="spacing">Qualified</button>
+                <button class="spacing">Interested</button>
+                <button id="new-lead" type="submit" style="margin-top:30px ;width:6cm;border-radius: 7mm;background-color:rgb(63, 156, 187);font-size: 15px;">ADD NEW LEAD</button>
+            </tr>
+</table>
+<!-- <table>
+            <tr>
+                <th>Name</th>
+                <th>Last Contacted</th>
+                <th>Product</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Lead Stage</th>
+                <th> </th>
+            </tr>
+
+            <tr>
+                <td>Kirti Gupta</td>
+                <td>2 days ago</td>
+                <td>Team Insurance</td>
+                <td>abc@gmail.com</td>
+                <td>1112223334</td>
+                <td class="clr-green">Contacted</td>
+                <td></td>
+            </tr>
+
+        </table> -->
+        <table id="dataTable">
+            <tr>
+                <th>Name</th>
+                <th>Last Contacted</th>
+                <th>Product</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Lead Stage</th>
+                <th> </th>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="personal-details.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="service.js" defer></script>
+
+</head>
+<header>
+    <nav class="head-nav">
+        <div class="head-ctn">
+            <img src="Images/Ins.png" id="search-icon" style="height: 70px; width: 100px;margin-bottom: 10px;">
+            <h2 style="margin-right: 400px;margin-bottom: 50px;">Agent's Portal</h2>
+
+            <div class="search-bar">
+                <img src="Images/search-icon.png" id="search-icon">
+                <input type="search" placeholder="Search...">
+            </div>
+
+            <div class="head-icons">
+                <img src="Images/bell-iconpng.png">
+                <img src="Images/profile.png">
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+    <nav class="side-navbar">
+        <ul style="width: 2cm;background-color: rgba(255, 255, 255, 0.763);">
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+
+    <div id="main-container" style="margin-left: 10%;">
+        <div class="form-heading">CG Protect Form
+            <div class="side-icon"><img src="Images/share.png"><img src="Images/whatsapp.png"></div>
+        </div>
+        <div class="probar" id="personal">
+            <div class="progress-bar">
+                <div class="circle completed">1</div>
+                <div class="thread"></div>
+                <div class="circle">2</div>
+                <div class="thread"></div>
+                <div class="circle">3</div>
+                <div class="thread"></div>
+                <div class="circle">4</div>
+            </div>
+
+            <div class="progress-bar" style="text-align:center ;">
+                <div class="label">Personal Details</div>
+                <div class="label">Income Details</div>
+                <div class="label">Documents</div>
+                <div class="label">Quotation</div>
+            </div>
+        </div>
+
+        <form action="#" (ngSubmit)="doFormSubmit()" #userForm="ngForm" id="ngForm">
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">First Name</span><br>
+                    <input type="text" maxlength="50" placeholder="Enter first name" required #firstName>
+                </div>
+            </div>
+
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Last Name</span><br>
+                    <input type="text" maxlength="50" placeholder="Enter last name" required #lastName>
+                </div>
+            </div>
+
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Phone Number</span><br>
+                    <input type="text" id="phn-num" placeholder="Enter phone number" pattern="^\+\d{2}-\d{10}$" required
+                        #phoneNumber>
+                </div>
+            </div>
+
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Email Address</span><br>
+                    <input type="text" placeholder="Enter your email" #email>
+                </div>
+            </div>
+
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Date of Birth</span><br>
+                    <input type="date" placeholder="Enter date of birth" #dob>
+                </div>
+            </div>
+
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Pincode</span><br>
+                    <input type="text" placeholder="Enter pincode" #pincode>
+                </div>
+            </div>
+
+            <div class="gender-form">
+                <span class="gender-title" #gender>Gender</span>
+                <div class="category">
+                    <input type="radio" name="gender"><a>Male</a>
+                    <input type="radio" name="gender"><a>Female</a>
+                    <input type="radio" name="gender"><a>Transgender</a>
+                </div>
+            </div>
+
+            <div class="smoker-form">
+                <span class="smoker-title">Do you smoke?</span>
+                <div class="category">
+                    <button class="yes-btn" type="button" value="Yes">Yes</button>
+                    <button class="no-btn" type="button" value="No">No</button>
+                </div>
+            </div>
+
+            <div class="alcoholic-form">
+                <span class="alcoholic-title" #alcoholic>Do you consume alcohol?</span>
+                <div class="category">
+                    <button class="yes-btn" type="button" value="Yes">Yes</button>
+                    <button class="no-btn" type="button" value="No">No</button>
+                </div>
+            </div>
+
+            <div class="address-details">
+                <div class="address-box">
+                    <span class="details" #address>Address</span><br>
+                    <textarea name="address" class="address" rows="4" cols="40"
+                        placeholder="Enter your address here..."></textarea>
+                </div>
+            </div>
+
+            <div style="margin-top:10% ;">
+                <table>
+                    <tr>
+                        <td><button class="button" id="spouseBtn" onclick="selectFamilyMember('spouse',event)">
+                                <img src="Images/spouse.png" alt="Spouse" width="50" height="50">
+                            </button>
+                            <label for="icon1">Spouse</label>
+                        </td>
+
+                        <td><button class="button" id="motherBtn" onclick="selectFamilyMember('mother',event)">
+                                <img src="Images/mother.png" alt="Mother" width="50" height="50">
+                            </button>
+                            <label for="icon2">Mother</label>
+                        </td>
+
+                        <td><button class="button" id="fatherBtn" onclick="selectFamilyMember('father',event)">
+                                <img src="Images/father.png" alt="Father" width="50" height="50">
+                            </button>
+                            <label for="icon3">Father</label>
+                        </td>
+
+                        <td><button class="button" id="childBtn" onclick="selectFamilyMember('child',event)">
+                                <img src="Images/baby.png" alt="Child" width="50" height="50">
+                            </button>
+                            <label for="icon4">Child</label>
+                        </td>
+
+                        <td><button class="button" id="otherBtn" onclick="selectFamilyMember('other',event)"
+                                style="margin-left:5px ;">
+                                <img src="Images/other.png" alt="Other" width="50" height="50">
+                            </button>
+                            <label for="icon5" style="margin-left:20px ;">Other</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-add-btn" style="margin-top:30px ;">
+                <button class="add-btn" type="submit">+ ADD</button>
+            </div>
+        
+    </div>
+
+    </form>
+    </div>
+</body>
+
+<footer>
+    <div><button id="personal-back" class="back-btn" >Back</button></div>
+    <div><button id="personal-nxt" class="next-btn" onclick="saveData()" type="submit">Next</button></div>
+</footer>
+
+</html>
